@@ -1,0 +1,393 @@
+export const navItems = [
+  {
+    title: "main",
+    items: [
+      { label: "Dashboard", path: "/dashboard", icon: "dashboard" },
+      { label: "Teams", path: "/teams", icon: "teams" },
+      { label: "Roles", path: "/roles", icon: "roles" },
+      { label: "Expense", path: "/", icon: "expense" },
+      { label: "Rewards", path: "/rewards", icon: "rewards" },
+      { label: "Smart Cards", path: "/smart-cards", icon: "cards" },
+      { label: "Reports", path: "/reports-analytics", icon: "reports" },
+    ],
+  },
+  {
+    title: "settings",
+    items: [
+      { label: "Settings", path: "/settings", icon: "settings" },
+      { label: "Terms & Conditions", path: "/terms", icon: "terms" },
+    ],
+  }
+];
+
+
+export const initialReports = [
+  {
+    id: "rep-001",
+    srNo: "01",
+    title: "Dec Report - 1",
+    month: "Dec-2025",
+    uploadedDate: "30/12/2025",
+    employee: {
+      id: "Emp. ID - 0001",
+      name: "Saksham Agarwal",
+      initials: "SA",
+      grade: "II",
+      department: "Technology",
+      email: "sakshamagarwal@giftryt.com",
+    },
+    approver: {
+      name: "Tanish Shah",
+      initials: "TS",
+    },
+    status: "Pending",
+    walletPolicies: "Food Wallet, Travel Wallet",
+    additionalDocs: "-",
+    bills: [
+      {
+        id: "b1",
+        title: "Air Travel Expense",
+        uploadedDate: "10/12/2025",
+        wallet: "Travel Wallet",
+        category: "Air Travel",
+        merchant: "Ixigo",
+        amount: 10000,
+        status: "Pending",
+        clientName: "Sai Enterprise",
+        projectId: "PJ-0001",
+        remarks: "-",
+        attachments: [
+          {
+            id: "att-1",
+            name: "Air_Travel_Receipt_Ixigo.png",
+            type: "image/svg+xml",
+            size: "142 KB",
+            url: "https://image.slidesdocs.com/responsive-images/docs/invoice-for-reimbursement-of-food-expenses-word-template_8109efa7a5__max.jpg",
+
+
+            title: "Air Travel Expense",
+            amount: 10000,
+            merchant: "Ixigo",
+            category: "Air Travel"
+
+          },
+        ],
+        comments: [
+          {
+            id: "c1",
+            author: "Saksham Agarwal",
+            authorInitials: "SA",
+            timestamp: "10/12/2025, 03:25 pm",
+            text: "The bill amount is in CNY and is converted to INR.",
+          },
+          {
+            id: "c2",
+            author: "Tanish Shah",
+            authorInitials: "TS",
+            timestamp: "10/12/2025, 04:05 pm",
+            text: "The bill image is not clear, please upload a clear bill.",
+          },
+          {
+            id: "c3",
+            author: "Saksham Agarwal",
+            authorInitials: "SA",
+            timestamp: "10/12/2025, 04:20 pm",
+            text: "Sure, I have re-uploaded the bill.",
+          },
+        ],
+      },
+      {
+        id: "b2",
+        title: "Hotel Booking",
+        uploadedDate: "11/12/2025",
+        wallet: "Travel Wallet",
+        category: "Accommodation",
+        merchant: "Make My Trip",
+        amount: 5000,
+        status: "Approved",
+        clientName: "Sai Enterprise",
+        projectId: "PJ-0001",
+        remarks: "Approved as per company travel policy limit.",
+        attachments: [
+          {
+            id: "att-2",
+            name: "MMT_Hotel_Voucher.png",
+            type: "image/svg+xml",
+            size: "98 KB",
+            url: "https://image.slidesdocs.com/responsive-images/docs/invoice-for-reimbursement-of-food-expenses-word-template_8109efa7a5__max.jpg",
+
+
+            title: "Hotel Booking",
+            amount: 5000,
+            merchant: "Make My Trip",
+            category: "Accommodation"
+          },
+        ],
+        comments: [
+          {
+            id: "c4",
+            author: "Tanish Shah",
+            authorInitials: "TS",
+            timestamp: "11/12/2025, 05:10 pm",
+            text: "Hotel invoice verified and approved.",
+          },
+        ],
+      },
+      {
+        id: "b3",
+        title: "Food",
+        uploadedDate: "12/12/2025",
+        wallet: "Food Wallet",
+        category: "Food",
+        merchant: "Swiggy",
+        amount: 600,
+        status: "Rejected",
+        clientName: "Sai Enterprise",
+        projectId: "PJ-0001",
+        remarks: "Exceeded daily food cap.",
+        attachments: [
+          {
+            id: "att-3",
+            name: "Swiggy_Food_Bill.png",
+            type: "image/svg+xml",
+            size: "45 KB",
+            url: "https://image.slidesdocs.com/responsive-images/docs/invoice-for-reimbursement-of-food-expenses-word-template_8109efa7a5__max.jpg",
+
+
+            title: "Food Bill",
+            amount: 600,
+            merchant: "Swiggy",
+            category: "Food"
+          },
+        ],
+        comments: [
+          {
+            id: "c5",
+            author: "Tanish Shah",
+            authorInitials: "TS",
+            timestamp: "12/12/2025, 06:15 pm",
+            text: "Reimbursement rejected: exceeds maximum food allowance.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "rep-002",
+    srNo: "03",
+    title: "Dec Report - 2",
+    month: "Dec-2025",
+    uploadedDate: "31/12/2025",
+    employee: {
+      id: "Emp. ID - 0002",
+      name: "Priya Mehta",
+      initials: "PM",
+      grade: "III",
+      department: "Marketing",
+      email: "priyamehta@giftryt.com",
+    },
+    approver: {
+      name: "Arjun Patel",
+      initials: "AP",
+    },
+    status: "Approved",
+    walletPolicies: "Travel Wallet",
+    additionalDocs: "Client_Approval.pdf",
+    bills: [
+      {
+        id: "b4",
+        title: "Client Dinner",
+        uploadedDate: "28/12/2025",
+        wallet: "Food Wallet",
+        category: "Food",
+        merchant: "Taj Hotels",
+        amount: 8000,
+        status: "Approved",
+        clientName: "Global Tech",
+        projectId: "GT-992",
+        remarks: "Approved for client meeting",
+        attachments: [
+          {
+            id: "att-4",
+            name: "Taj_Invoice.png",
+            type: "image/svg+xml",
+            size: "112 KB",
+            url: "https://image.slidesdocs.com/responsive-images/docs/invoice-for-reimbursement-of-food-expenses-word-template_8109efa7a5__max.jpg",
+
+            title: "Client Dinner",
+            amount: 8000,
+            merchant: "Taj Hotels",
+            category: "Food"
+          },
+        ],
+        comments: [],
+      },
+    ],
+  },
+  {
+    id: "rep-003",
+    srNo: "02",
+    title: "Dec Report - 1",
+    month: "Dec-2025",
+    uploadedDate: "31/12/2025",
+    employee: {
+      id: "Emp. ID - 0002",
+      name: "Priya Mehta",
+      initials: "PM",
+      grade: "III",
+      department: "Marketing",
+      email: "priyamehta@giftryt.com",
+    },
+    approver: {
+      name: "Arjun Patel",
+      initials: "AP",
+    },
+    status: "Rejected",
+    walletPolicies: "Travel Wallet",
+    additionalDocs: "-",
+    bills: [
+      {
+        id: "b5",
+        title: "Taxi Fare",
+        uploadedDate: "29/12/2025",
+        wallet: "Travel Wallet",
+        category: "Local Travel",
+        merchant: "Uber",
+        amount: 8000,
+        status: "Rejected",
+        clientName: "Global Tech",
+        projectId: "GT-992",
+        remarks: "Missing receipt attachment",
+        attachments: [],
+        comments: [
+          {
+            id: "c6",
+            author: "Arjun Patel",
+            authorInitials: "AP",
+            timestamp: "31/12/2025, 02:00 pm",
+            text: "No valid receipt uploaded for Uber ride.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "rep-004",
+    srNo: "04",
+    title: "Dec Report - 1",
+    month: "Jan-2026",
+    uploadedDate: "01/01/2026",
+    employee: {
+      id: "Emp. ID - 0003",
+      name: "Anjali Singh",
+      initials: "AS",
+      grade: "I",
+      department: "Sales",
+      email: "anjalisingh@giftryt.com",
+    },
+    approver: {
+      name: "Meera Jain",
+      initials: "MJ",
+    },
+    status: "Partially Approved",
+    walletPolicies: "Food Wallet, Travel Wallet",
+    additionalDocs: "-",
+    bills: [
+      {
+        id: "b6",
+        title: "Flight Tickets",
+        uploadedDate: "28/12/2025",
+        wallet: "Travel Wallet",
+        category: "Air Travel",
+        merchant: "IndiGo",
+        amount: 10000,
+        status: "Approved",
+        clientName: "Starlight Inc",
+        projectId: "SL-102",
+        remarks: "-",
+        attachments: [
+          {
+            id: "att-5",
+            name: "Indigo_Flight_Ticket.png",
+            type: "image/svg+xml",
+            size: "150 KB",
+            url: "https://image.slidesdocs.com/responsive-images/docs/invoice-for-reimbursement-of-food-expenses-word-template_8109efa7a5__max.jpg",
+
+            title: "Flight Tickets",
+            amount: 10000,
+            merchant: "IndiGo",
+            category: "Air Travel"
+          },
+        ],
+        comments: [],
+      },
+      {
+        id: "b7",
+        title: "Stationery",
+        uploadedDate: "29/12/2025",
+        wallet: "Office Supplies",
+        category: "Supplies",
+        merchant: "Office1",
+        amount: 2000,
+        status: "Pending",
+        clientName: "Internal",
+        projectId: "INT-00",
+        remarks: "-",
+        attachments: [],
+        comments: [],
+      },
+    ],
+  },
+  {
+    id: "rep-005",
+    srNo: "05",
+    title: "Dec Report - 1",
+    month: "Jan-2026",
+    uploadedDate: "02/01/2026",
+    employee: {
+      id: "Emp. ID - 0004",
+      name: "Priya Singh",
+      initials: "PS",
+      grade: "II",
+      department: "Product",
+      email: "priyasingh@giftryt.com",
+    },
+    approver: {
+      name: "Nina Kaur",
+      initials: "NK",
+    },
+    status: "Approved",
+    walletPolicies: "Travel Wallet",
+    additionalDocs: "-",
+    bills: [
+      {
+        id: "b8",
+        title: "Software Subscriptions",
+        uploadedDate: "30/12/2025",
+        wallet: "Software Wallet",
+        category: "Subscriptions",
+        merchant: "Figma Inc",
+        amount: 9000,
+        status: "Approved",
+        clientName: "OptiFii App",
+        projectId: "OPT-01",
+        remarks: "Annual license approved.",
+        attachments: [
+          {
+            id: "att-6",
+            name: "Figma_Invoice_2025.png",
+            type: "image/svg+xml",
+            size: "80 KB",
+            url: "https://image.slidesdocs.com/responsive-images/docs/invoice-for-reimbursement-of-food-expenses-word-template_8109efa7a5__max.jpg",
+
+            title: "Figma Subscription",
+            amount: 9000,
+            merchant: "Figma Inc",
+            category: "Software"
+          },
+        ],
+        comments: [],
+      },
+    ],
+  },
+];

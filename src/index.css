@@ -1,0 +1,139 @@
+@import url('https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap');
+@import './styles/theme.css';
+@import './styles/index.css';
+
+/* Global Layout */
+.app-layout {
+  display: flex;
+  gap: 4px;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  border: 1px solid #F2F2F2;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.page-container {
+  padding: 0 12px 16px 16px;
+  flex: 1;
+}
+
+/* Typography & General Classes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  color: #111827;
+  font-family: var(--font-family);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Common Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-family);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-family);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-light);
+}
+
+.btn-outline-danger {
+  background: transparent;
+  border: 1px solid #EF4444;
+  color: #EF4444;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-family);
+}
+
+.btn-outline-danger:hover {
+  background-color: #FEF2F2;
+}
+
+.btn-outline-success {
+  background: transparent;
+  border: 1px solid #10B981;
+  color: #10B981;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-family);
+}
+
+.btn-outline-success:hover {
+  background-color: #ECFDF5;
+}

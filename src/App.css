@@ -1,0 +1,182 @@
+/* ================== Button Styles Start ===================== */
+.custom-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 7px 16px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.custom-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* =========================
+   SIZE
+========================= */
+
+.btn-size-small {
+    height: 32px;
+}
+
+.btn-size-medium {
+    height: 36px;
+}
+
+.btn-size-large,
+.btn-size-lll {
+    height: 44px;
+}
+
+/* =========================
+   PRIMARY
+========================= */
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* =========================
+   OUTLINE PRIMARY
+========================= */
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover:not(:disabled) {
+    background-color: #f6f3fb;
+}
+
+/* =========================
+   OUTLINE DANGER
+========================= */
+
+.btn-outline-danger {
+    background-color: transparent;
+    color: #dc2626;
+    border-color: #dc2626;
+}
+
+.btn-outline-danger:hover:not(:disabled) {
+    background-color: #fef2f2;
+}
+
+/* =========================
+   OUTLINE SUCCESS
+========================= */
+
+.btn-outline-success {
+    background-color: transparent;
+    color: #16a34a;
+    border-color: #16a34a;
+}
+
+.btn-outline-success:hover:not(:disabled) {
+    background-color: #f0fdf4;
+}
+
+/* =========================
+   ICON BUTTON
+========================= */
+
+.btn-icon {
+    width: 36px;
+    padding: 0;
+}
+
+.btn-icon.btn-size-small {
+    width: 32px;
+}
+
+.btn-icon.btn-size-medium {
+    width: 36px;
+}
+
+.btn-icon.btn-size-large,
+.btn-icon.btn-size-lll {
+    width: 44px;
+}
+
+.btn-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================== Button Styles End ===================== */
+
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.gap4 {
+    gap: 4px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap12 {
+    gap: 12px;
+}
+
+.gap16 {
+    gap: 16px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap24 {
+    gap: 24px;
+}
